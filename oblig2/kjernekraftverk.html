@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kjernekraftverk i Halden</title>
+    <link rel="stylesheet" href="./styles/kjernekraftverk.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <div id="content">
+      <main>
+        <section id="section_1">
+          <div id="map"></div>
+          <p>
+            På skjermen ser du et grovt anslag på hvor stort kjernekraftverket
+            som er foreslått i Halden kommer til å bli.
+          </p>
+          <p>
+            Dette området er lite i forhold til det en vindpark ville trengt for
+            å generere samme mengde energi.
+          </p>
+
+          <p id="section_2">
+            For å kunne generere samme mengde energi i en vindmøllepark ville
+            det krevd et mye større areal.
+          </p>
+        </section>
+        <section class="no_bg">
+          <h2>Sammenliget med en vindpark</h2>
+          <p>
+            Et kjernekraftverk på 600 MWe krever gjennomsnittlig 50-200 km2 med
+            areal. Et slikt anlegg vil kunne produsere rundt 5000GWh med strøm.
+            En vindmøllepark som produserer tilsvarende mengde energi krever
+            opptil 415 ganger mer areal.
+          </p>
+
+          <p>
+            Når det gjelder energiproduksjon, kan et atomkraftverk generere
+            store mengder strøm. Et typisk kraftverk på 1 gigawatt (GW) kan
+            dekke behovet til omtrent én million hjem. Atomkraftverk er svært
+            effektive og kan operere kontinuerlig i lange perioder, noe som gjør
+            dem til en stabil kilde for elektrisitetsproduksjon.
+          </p>
+          <p>
+            Energibehovet til et atomkraftverk består av driftsenergi og
+            produksjonskapasitet. Selv om kraftverket primært produserer energi,
+            kreves det også energi til kjølesystemer, kontrollsystemer, og
+            sikkerhetsutstyr. For eksempel må kjølevann sirkuleres kontinuerlig
+            for å forhindre overoppheting, noe som krever elektrisitet. Samlet
+            sett bruker kraftverket vanligvis 5-10 % av sin egen produksjon til
+            intern drift.
+          </p>
+          <h2>Men hvor skal kraftverket være?</h2>
+          <p>
+            Når det kommer til lokasjon, står det på
+            <a target="_blank" href="https://www.haldenkjernekraft.no/"
+              >Halden kjernekraftverk</a
+            >
+            sine nettsider at kraftverket de ønsker å bygge burde være
+            nærliggende lokalindustri, slik at dampen som blir generert kan
+            brukes til industribyggningene. De ønsker også at varmen som
+            genereres skal brukes til å varme opp nærliggende boliger. Viktigs
+            av alt så burde kraftverket ligge nær vann, som er en viktig
+            komponent for kjølesystemene reaktorene avhenger av.
+          </p>
+        </section>
+        <section class="no_bg">
+          <h2>
+            På kartet vist under kan vi se noen aktuelle lokasjoner for
+            utbyggning av Haldenkraftverket og et cirka-anslag på hvor mye areal
+            disse vil kreve.
+          </h2>
+          <p>
+            punktene på kartet vist under er steder vi mener er aktuelle
+            lokasjoner for et kjernekraftverk i Halden
+          </p>
+          <div id="interactive-map" style="height: 200px"></div>
+        </section>
+        <section class="no_bg">
+          <h2>Hvordan ville kraftverket påvirket industrien i Halden?</h2>
+          <h3>Vi kan starte med å se på arbeidsplasser</h3>
+          <p>
+            Kjernekraftverket vil ha behov for opptil 400 ansatte med mye
+            forskjellig kompetanse: Elektrikere, vektere, fysikere, økonomer,
+            renholdere, prosessoperatører og ingeniører. Utredningsarbeidet
+            omfatter å lage en oversikt over hvilken kompetanse vi trenger, hvor
+            mange ansatte og hvordan vi kan sikre rekruttering, utdanning og
+            opplæring av nok folk.
+          </p>
+          <p>
+            Basert på en ringvirkningsmodell fra
+            <a
+              href="https://www.haldenkjernekraft.no/wp-content/uploads/2024/07/MENON-Rapport-Kjernekraft-i-Halden-1.pdf "
+              >Haldenkjernekraftverk</a
+            >
+            estimerer vi at kraftverket kan komme til å understøtte mellom 500
+            og 1400 årsverk, avhengig av kapasitet. Dette er fordelt mellom
+            direkte og indirekte effekter som vist i figuren under.
+          </p>
+          <figure>
+            <img
+              src="./media/image.png"
+              alt="ringvirkningsmodell fra Haldenkjernekraftverk"
+            />
+            <figcaption>
+              Bildet er lånt fra rapporten som er linket i paragrafen over.
+            </figcaption>
+          </figure>
+          <p>
+            Av figuren ser vi at de direkte effektene er mellom 340 og 500
+            årsverk, mens de indirekte effektene er mellom 140 og 560
+            sysselsatte. Sistnevnte dekker over ansatte som jobber i bedrifter
+            som enten er leverandører eller underleverandører til kraftverket
+          </p>
+        </section>
+      </main>
+      <footer class="no_bg">
+        <p>&copy; Gruppe 31</p>
+        <p>Project overseen and steered by producer: Martinius</p>
+        <p>Story provided by journalist: Erik</p>
+        <p>Media provided by designer: Vilde</p>
+        <p>Website provided by web-developer: Jonas</p>
+      </footer>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./kjernekraftverk.js"></script>
+    <script src="./interactive-map.js"></script>
+  </body>
+</html>

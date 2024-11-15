@@ -1,0 +1,2 @@
+# Kommunikasjonsdesign2024H
+ 
