@@ -239,9 +239,8 @@ body {
 
 /* Portrait Style */
 .main-sections img[alt*="portrett"] {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 150px;
+  height: 200px;
   float: left;
   margin-right: var(--spacing-sm);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -287,6 +286,15 @@ button:hover {
 
 .readmore.active {
   display: block;
+}
+
+footer {
+  padding: 1rem;
+  p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 /* Media Queries */
