@@ -14,10 +14,16 @@ p {
   border-radius: 4px;
   font-size: clamp(1.2rem 2vw 3rem);
 }
+
 .no_bg {
   background-color: black;
   color: white;
   padding: 2rem 1rem 1rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 .no_bg p {
   margin: auto;
@@ -40,4 +46,9 @@ img {
   max-width: 800px;
   height: auto;
   display: inline-block;
+}
+
+article {
+  width: 50%;
+  margin: 0 auto;
 }
