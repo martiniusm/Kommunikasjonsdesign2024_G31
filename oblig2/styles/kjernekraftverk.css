@@ -16,8 +16,8 @@ p {
 }
 
 .no_bg {
-  background-color: black;
-  color: white;
+  background-color: #efefef; 
+  color: black;
   padding: 2rem 1rem 1rem 1rem;
 
   display: flex;
