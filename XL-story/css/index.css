@@ -247,14 +247,15 @@ body {
 }
 
 /* Quote Style */
-.main-sections p span:first-child {
+.main-sections p span.quote {
   font-style: italic;
   font-size: 1.25rem;
   color: var(--text-secondary);
   padding-left: 1.5rem;
-  border-left: 4px solid var(--text-secondary);
+  border-left: 4px solid var(--text-primary);
   margin: 2rem 0;
   line-height: 1.6;
+  display: block;
 }
 
 /* Buttons */
